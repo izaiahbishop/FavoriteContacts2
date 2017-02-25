@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FavoriteContacts</string>
+    <string name="_218_765_4126">218-765-4126</string>
+    <string name="_218_867_5309">218-867-5309</string>
+    <string name="_218_952_7145">218-952-7145</string>
+    <string name="call">Call</string>
+    <string name="jenny">Jenny</string>
+    <string name="robert">Robert</string>
+    <string name="text_hi">Text \'Hi\'</string>
+    <string name="sammy">Sammy</string>
+</resources>
