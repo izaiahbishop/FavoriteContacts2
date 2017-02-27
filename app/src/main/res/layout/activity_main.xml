@@ -15,35 +15,46 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:weightSum="1">
 
         <TextView
             android:text="@string/jenny"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textViewName1"
-            android:layout_weight="2.18" />
+            android:layout_weight="0.11" />
 
         <TextView
             android:text="@string/_218_867_5309"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textViewNumber1"
-            android:layout_weight="1.32" />
+            android:layout_weight="0.33" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <Button
             android:text="@string/call"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/buttonCallPerson1"
-            android:layout_weight="1.33" />
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle" />
 
         <Button
-            android:text="@string/text_hi"
+            android:text="@string/send_message"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/buttonTextPerson1"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -53,33 +64,17 @@
 
         <TextView
             android:text="@string/robert"
-            android:layout_width="wrap_content"
+            android:layout_width="13dp"
             android:layout_height="wrap_content"
             android:id="@+id/textViewName2"
-            android:layout_weight="1.50" />
+            android:layout_weight="3834.59" />
 
         <TextView
-            android:text="@string/_218_952_7145"
+            android:text="@string/_218_765_4126"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textViewNumber2"
-            android:layout_weight="1" />
-
-        <Button
-            android:text="Call"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/buttonCallPerson2"
-            android:layout_weight="1"
-            tools:ignore="HardcodedText" />
-
-        <Button
-            android:text="Text 'Hi'"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/buttonTextPerson2"
-            android:layout_weight="1"
-            tools:ignore="HardcodedText" />
+            android:layout_weight="15647.85" />
 
     </LinearLayout>
 
@@ -88,34 +83,75 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <Button
+            android:text="Call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonCallPerson2"
+            tools:ignore="ButtonStyle,HardcodedText"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="@string/send_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonTextPerson2"
+            tools:ignore="ButtonStyle,HardcodedText"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.01"
+        android:weightSum="1"
+        tools:ignore="InefficientWeight">
+
         <TextView
             android:text="@string/sammy"
-            android:layout_width="57dp"
             android:layout_height="wrap_content"
-            android:id="@+id/textViewName3" />
+            android:id="@+id/textViewName3"
+            android:layout_width="050dp"
+            android:layout_weight="0.07"
+            tools:ignore="NestedWeights" />
 
         <TextView
             android:text="@string/_218_765_4126"
-            android:layout_width="98dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textViewNumber3" />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="353dp"
+        android:layout_height="wrap_content">
+
         <Button
             android:text="Call"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/buttonCallPerson3"
-            android:layout_weight="1"
-            tools:ignore="HardcodedText" />
+            tools:ignore="ButtonStyle,HardcodedText"
+            android:layout_weight="0.46" />
 
         <Button
-            android:text="Text 'Hi'"
-            android:layout_width="match_parent"
+            android:text="@string/send_message"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/buttonTextPerson3"
-            android:layout_weight="1"
-            tools:ignore="HardcodedText" />
+            tools:ignore="ButtonStyle,HardcodedText"
+            android:layout_weight="0.62" />
 
     </LinearLayout>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerTextMessages"
+        android:entries="@array/text_messages_array" />
 
 </LinearLayout>
